@@ -27,7 +27,6 @@
 	ApplicationController.prototype.chooseBrowser = function(target) {
 		localStorage.favorite = target.attr("src");
 		localStorage.favoriteName = target.attr("title");
-		
 		this.synchUI();
 		
 	};
