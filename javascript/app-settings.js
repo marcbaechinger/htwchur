@@ -44,24 +44,23 @@
 	ApplicationController.prototype.getFavoriteBrowserName = function(ev) {
 		return this.settings.favoriteName;
 	};
+	
 	ApplicationController.prototype.getSettings = function() {
-		var settings = localStorage.settings;
-		if (settings) {
-			settings = JSON.parse(settings);
-		} else {
-			settings = this.getDefaultSettings();
-		}
-		return settings;
+		//
+		//  TODO add code here
+		//  1) get settings from local storage and convert to js object
+		//  2) read default settings to have initial values
+		//  
+		//
+		//
 	};
+	
 	ApplicationController.prototype.storeSettings = function() {
-		localStorage.settings = JSON.stringify(this.settings);
+		// TODO: store settings
 	};
 	
 	ApplicationController.prototype.getDefaultSettings = function() {
-		return {
-			favoriteName: "Mozilla Firefox",
-			favoriteIcon: "img/browser/firefox.png"
-		};
+		// TODO return default settings
 	};
 	
 	

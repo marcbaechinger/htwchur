@@ -25,10 +25,8 @@
 	};
 	
 	ApplicationController.prototype.chooseBrowser = function(target) {
-		localStorage.favorite = target.attr("src");
-		localStorage.favoriteName = target.attr("title");
+		// TODO store source and title attribute on local storage 
 		this.synchUI();
-		
 	};
 	
 	ApplicationController.prototype.synchUI = function() {
@@ -37,12 +35,12 @@
 	};
 	
 	ApplicationController.prototype.getFavoriteBrowserIcon = function(ev) {
-		var favorite = localStorage.favorite || "img/browser/firefox.png";
-		return favorite;
+		// TODO read image src from storage 
+		return "img/browser/firefox.png";
 	};
 	ApplicationController.prototype.getFavoriteBrowserName = function(ev) {
-		var favorite = localStorage.favoriteName || "Mozilla Firefox";
-		return favorite;
+		// TODO read browser name from storage
+		return "blablabla";
 	};
 	
 	global.ApplicationController = ApplicationController;
